@@ -1,0 +1,8 @@
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\obj\Debug\Trade_Entry_Application.Properties.Resources.resources
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\obj\Debug\Trade Entry Application.csproj.GenerateResource.Cache
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\bin\Debug\Trade Entry Application.exe.config
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\bin\Debug\Trade Entry Application.exe
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\bin\Debug\Trade Entry Application.pdb
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\obj\Debug\Trade Entry Application.exe
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\obj\Debug\Trade Entry Application.pdb
+C:\Users\spruc\Desktop\Trade Entry Application\Trade Entry Application\Trade Entry Application\obj\Debug\Trade_Entry_Application.Form.resources
