@@ -58,10 +58,48 @@ namespace Trade_Entry_Application
         }
 
         private void notionalEntry_TextChanged(object sender, EventArgs e)
-        {
+        {/*
             decimal notionalEntryDec = Convert.ToDecimal(notionalEntry.Text);
             if (notionalEntry.Text.EndsWith("m")) {
-                decimal notionalEntry.Text = notionalEntryDec * 10000000;
+                decimal outputasdecimal = notionalEntryDec * 1000000;
+                string output = Convert.ToString(outputasdecimal);
+                notionalEntry.Text = output;
+            }*/
+        }
+
+        private void notionalEntry_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void notionalEntry_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+        }
+
+        private void notionalEntry_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Console.WriteLine(e.KeyChar);
+            if (e.KeyChar == 'm') {
+                e.Handled = true;
+                double d = double.Parse(notionalEntry.Text);
+                d = d * 10000000.0;
+                notionalEntry.Text = d.ToString();
+                Console.WriteLine(d);
+                notionalEntry.SelectionStart = notionalEntry.Text.Length;
+            }
+            if (e.KeyChar == 'k')
+            {
+                e.Handled = true;
+                double d = double.Parse(notionalEntry.Text);
+                d = d * 1000.0;
+                notionalEntry.Text = d.ToString();
+                Console.WriteLine(d);
+                notionalEntry.SelectionStart = notionalEntry.Text.Length;
+            }
+            Console.WriteLine("{0}", (int)e.KeyChar);
+            int asciivalue = (int)e.KeyChar;
+            if ((asciivalue < 48 || asciivalue > 57) && asciivalue != 8)
+            {
+                e.Handled = true;
             }
         }
     }

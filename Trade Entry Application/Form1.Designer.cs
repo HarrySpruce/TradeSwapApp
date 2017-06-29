@@ -65,6 +65,9 @@
             this.notionalEntry.Size = new System.Drawing.Size(100, 20);
             this.notionalEntry.TabIndex = 2;
             this.notionalEntry.TextChanged += new System.EventHandler(this.notionalEntry_TextChanged);
+            this.notionalEntry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.notionalEntry_KeyDown);
+            this.notionalEntry.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.notionalEntry_KeyPress);
+            this.notionalEntry.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.notionalEntry_PreviewKeyDown);
             // 
             // textBox2
             // 
